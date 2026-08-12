@@ -1,7 +1,7 @@
-run: main
-	./main
+run: main.exe
+	./main.exe
 
-main: main.cc include/calculadora.cc
-	g++ main.cc include/calculadora.cc -o main
+main.exe: main.cc src/calculadora.cc
+	g++ main.cc src/calculadora.cc -o main.exe
 
 .PHONY: main
