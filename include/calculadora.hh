@@ -3,37 +3,37 @@
 
 
 /**
- * @brief Operacion de suma
+ * @brief Operación de suma
  * 
- * @param num1 Digito 1
- * @param num2 Digito 2
+ * @param num1 Dígito 1
+ * @param num2 Dígito 2
  */
 void sumar(long long num1, long long num2);
 
 
 /**
- * @brief Operacion de resta
+ * @brief Operación de resta
  * 
- * @param num1 Digito 1
- * @param num2 Digito 2
+ * @param num1 Dígito 1
+ * @param num2 Dígito 2
  */
 void restar(long long num1, long long num2);
 
 
 /**
- * @brief Operacion de multiplicar
+ * @brief Operación de multiplicar
  * 
- * @param num1 Digito 1
- * @param num2 Digito 2
+ * @param num1 Dígito 1
+ * @param num2 Dígito 2
  */
 void multiplicar(long long num1, long long num2);
 
 
 /**
- * @brief Operacion de dividir
+ * @brief Operación de dividir
  * 
- * @param num1 Digito 1
- * @param num2 Digito 2
+ * @param num1 Dígito 1
+ * @param num2 Dígito 2
  */
 void dividir(long long num1, long long num2);
 

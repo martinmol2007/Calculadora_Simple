@@ -4,33 +4,37 @@
 
 using namespace std;
 
+// Para el inicio
+const string SEPARADOR(63, '=');
+
 void mostrar_introduccion() {
-    cout << "/////////////////////////////////////////////////////////////" << endl;
-    cout << "Bienvendio a mi Mini-Calculadora simple!" << endl;
-    cout << "Esta calculadora permite hacer las siguentes operaciones: " << endl;
-    cout << "1. Suma" << endl;
-    cout << "2. Resta" << endl;
-    cout << "3. Multiplicacion" << endl;
-    cout << "4. Division" << endl;
-    cout << "Para salir, introduce 0" << endl;
-    cout << "/////////////////////////////////////////////////////////////" << endl;
+    cout << SEPARADOR << endl;
+    cout << "  Bienvenido a mi Mini-Calculadora simple!" << endl;
+    cout << SEPARADOR << endl;
+    cout << "  Operaciones disponibles:" << endl;
+    cout << "    1. Suma" << endl;
+    cout << "    2. Resta" << endl;
+    cout << "    3. Multiplicación" << endl;
+    cout << "    4. División" << endl;
+    cout << "    0. Salir" << endl;
+    cout << SEPARADOR << endl << endl;
 }
 
 void conseguir_numeros(long long& num1, long long& num2) {
-    cout << "Introduce el primer numero: ";
+    cout << "Introduce el primer número: ";
     cin >> num1;
-    cout << "Introduce el segundo numero: ";
+    cout << "Introduce el segundo número: ";
     cin >> num2;
 
     return;
 }
 
 int main() {
-    // Muestra informacion de bienvenida
+    // Muestra información de bienvenida
     mostrar_introduccion();
 
     int seleccion;
-    cout << "Selecciona una opcion: ";
+    cout << "Selecciona una opción: ";
 
     long long num1, num2;
 
@@ -59,9 +63,9 @@ int main() {
             }
         }
         else {
-            cout << "Error, introduce una opcion valida!" << endl;
+            cout << "Error, introduce una opción válida!" << endl;
         }
-        cout << "Selecciona una opcion: ";
+        cout << "Selecciona una opción: ";
     }
 
     return 0;
