@@ -1,3 +1,3 @@
 # Calculadora Simple
 
-Una simple calculadora con POO
+Una simple calculadora con varios archivos
