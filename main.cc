@@ -32,12 +32,11 @@ int main() {
     int seleccion;
     cout << "Selecciona una opcion: ";
 
-    bool salir = false;
     long long num1, num2;
 
-    while(cin >> seleccion && not salir) {
+    while(cin >> seleccion) {
         if(seleccion == 0) {
-            salir = true;
+            return 0;
         }
         else if(seleccion == 1) {
             conseguir_numeros(num1, num2);
@@ -62,6 +61,7 @@ int main() {
         else {
             cout << "Error, introduce una opcion valida!" << endl;
         }
+        cout << "Selecciona una opcion: ";
     }
 
     return 0;
