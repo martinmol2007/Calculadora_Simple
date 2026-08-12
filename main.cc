@@ -44,13 +44,20 @@ int main() {
             sumar(num1, num2);
         }
         else if(seleccion == 2) {
+            conseguir_numeros(num1, num2);
             restar(num1, num2);
         }
         else if(seleccion == 3) {
+            conseguir_numeros(num1, num2);
             multiplicar(num1, num2);
         }
         else if(seleccion == 4) {
-            dividir(num1, num2);
+            conseguir_numeros(num1, num2);
+            if(num2 == 0) {
+                cout << "Error, no se puede dividir por 0!" << endl;
+            } else {
+                dividir(num1, num2);
+            }
         }
         else {
             cout << "Error, introduce una opcion valida!" << endl;
