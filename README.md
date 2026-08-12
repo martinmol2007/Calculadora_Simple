@@ -25,7 +25,7 @@ Una calculadora de consola en C++ que realiza las cuatro operaciones básicas: s
 Con `make`:
 
 ```bash
-make (run)
+make 
 ```
 
 Esto compila el proyecto y ejecuta automáticamente `main.exe`.
@@ -35,7 +35,6 @@ Manualmente, sin `make`:
 ```bash
 g++ main.cc src/calculadora.cc -o main.exe
 ./main.exe
-(Nombre de fichero .exe a elegir)
 ```
 
 ## Uso
