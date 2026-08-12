@@ -16,6 +16,15 @@ void mostrar_introduccion() {
     cout << "/////////////////////////////////////////////////////////////" << endl;
 }
 
+void conseguir_numeros(long long& num1, long long& num2) {
+    cout << "Introduce el primer numero: ";
+    cin >> num1;
+    cout << "Introduce el segundo numero: ";
+    cin >> num2;
+
+    return;
+}
+
 int main() {
     // Muestra informacion de bienvenida
     mostrar_introduccion();
@@ -24,25 +33,27 @@ int main() {
     cout << "Selecciona una opcion: ";
 
     bool salir = false;
+    long long num1, num2;
 
     while(cin >> seleccion && not salir) {
         if(seleccion == 0) {
             salir = true;
         }
         else if(seleccion == 1) {
-
+            conseguir_numeros(num1, num2);
+            sumar(num1, num2);
         }
         else if(seleccion == 2) {
-
+            restar(num1, num2);
         }
         else if(seleccion == 3) {
-
+            multiplicar(num1, num2);
         }
         else if(seleccion == 4) {
-
+            dividir(num1, num2);
         }
         else {
-            
+            cout << "Error, introduce una opcion valida!" << endl;
         }
     }
 
