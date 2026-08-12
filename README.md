@@ -25,7 +25,8 @@ Una calculadora de consola en C++ que realiza las cuatro operaciones básicas: s
 Con `make`:
 
 ```bash
-make 
+make            # Compila y Ejecuta el programa
+make clean      # Borra el binario
 ```
 
 Esto compila el proyecto y ejecuta automáticamente `main.exe`.
@@ -71,4 +72,4 @@ Introduce el segundo número: 3
 
 - Los operandos se leen como `long long`, por lo que admiten números enteros grandes.
 - La opción de división también muestra el resto de la operación (`num1 % num2`).
-- Cuando pida un número, *NO* introducir algún caracter que no sea un número válido, si lo haces, no funcionara
+- Cuando pida un número, *NO* introduzcas un carácter que no sea un número válido: el programa no valida la entrada, así que puede mostrar un resultado incorrecto (memoria sin inicializar) y cerrarse en silencio.
